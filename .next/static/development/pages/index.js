@@ -3441,7 +3441,7 @@ var Home = function Home() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!********************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=E%3A%5CConsignments%5CProjects%5CCreare%20Consignment%5Cras-fullpage-strategies-master%5Ccreare-frontend%5Cpages%5Cindex.js ***!
   \********************************************************************************************************************************************************************************************/
@@ -3464,5 +3464,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[3,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
