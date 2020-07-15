@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Background.scss";
+import classes from "./background.scss";
 
 const Background = () => {
   const videoSource = "/assets/cover.mp4";
