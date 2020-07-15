@@ -14,8 +14,24 @@
     flex-direction: column;
 
     .image {
-      width: 21em;
+      position: relative;
+      margin-top: 2.5rem;
+      align-self: center;
+      width: 18rem;
       img {
+        margin-top: 3rem;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .register-logo {
+      position: relative;
+      margin-top: 2.5rem;
+      align-self: center;
+      width: 12rem;
+      img {
+        margin-top: 3rem;
         width: 100%;
         height: 100%;
       }
@@ -45,7 +61,29 @@
           background-color: #f3f3f3;
           border: 0;
           border-radius: 4px;
-          margin-bottom: 31px;
+          margin-bottom: 10px;
+          transition: all 250ms ease-in-out;
+          &:hover {
+            //background-color: #ffffff;
+            //box-shadow: 0px 0px 14px 0.3px #0e81ce96;
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: 0px 0px 12px 0.8px #3474dbb2;
+          }
+        }
+        select {
+          margin-top: 6px;
+          min-width: 18em;
+          height: 37px;
+          padding: 0px 10px;
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          background-color: #f3f3f3;
+          border: 0;
+          border-radius: 4px;
+          margin-bottom: 10px;
           transition: all 250ms ease-in-out;
           &:hover {
             //background-color: #ffffff;
@@ -62,6 +100,6 @@
   }
 
   .footer {
-    margin-top: 3em;
+    margin-top: 35rem;
   }
 }

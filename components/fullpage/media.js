@@ -68,7 +68,7 @@ export const media = [
     children: <Home />,
   },
   {
-    slug: "page-two",
+    slug: "login",
     className: "sectioned page-two",
     children: (
       <Page>
