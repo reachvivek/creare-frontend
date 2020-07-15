@@ -19,20 +19,17 @@ const Nav = withNavigationContext(({ fullpage }) => {
           ></img>
         </div>
         <nav>
-          <Link className={slug === "" ? "selected" : null} href="/">
-            index
+          <Link className={slug === "home" ? "selected" : null} href="/">
+            Home
           </Link>
-          <Link
-            className={slug === "page-two" ? "selected" : null}
-            href="/page-two"
-          >
-            page-two
+          <Link className={slug === "login" ? "selected" : null} href="/login">
+            Login
           </Link>
           <Link
             className={slug === "page-three" ? "selected" : null}
             href="/page-three"
           >
-            page-three
+            Register
           </Link>
         </nav>
       </div>

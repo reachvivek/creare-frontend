@@ -112,7 +112,7 @@ var Nav = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE_1
       columnNumber: 9
     }
   }, __jsx(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: slug === "" ? "selected" : null,
+    className: slug === "home" ? "selected" : null,
     href: "/",
     __self: _this,
     __source: {
@@ -120,25 +120,25 @@ var Nav = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE_1
       lineNumber: 22,
       columnNumber: 11
     }
-  }, "index"), __jsx(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: slug === "page-two" ? "selected" : null,
-    href: "/page-two",
+  }, "Home"), __jsx(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: slug === "login" ? "selected" : null,
+    href: "/login",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25,
       columnNumber: 11
     }
-  }, "page-two"), __jsx(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "Login"), __jsx(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     className: slug === "page-three" ? "selected" : null,
     href: "/page-three",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 28,
       columnNumber: 11
     }
-  }, "page-three"))));
+  }, "Register"))));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
 

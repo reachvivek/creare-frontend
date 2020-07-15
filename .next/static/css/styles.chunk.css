@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
 /* Box sizing rules */
 *,
 *::before,
@@ -3626,17 +3627,60 @@ span.aws-btn__bubble {
   margin-bottom: 8px;
 }
 
-.background {
-  display: block;
+.Container {
+  position: relative;
+  min-height: 300px;
+  max-height: 800px;
+  overflow: hidden;
+  margin-bottom: 500px; }
+
+/* Style the video: 100% width and height to cover the entire window */
+.Video {
+  width: 100%;
+  height: 100%; }
+
+/* Add some content at the bottom of the video/page */
+.Content {
   position: absolute;
   top: 0;
-  left: 0;
+  color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  filter: grayscale(100%) opacity(35%);
-  mix-blend-mode: multiply; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; }
+
+.SubContent {
+  text-align: center;
+  padding: 10px; }
+
+.SubContent p {
+  color: #eeeeeead;
+  font-size: 1.3rem; }
+
+.SubContent button {
+  font-weight: bold;
+  margin-top: 30px;
+  color: #f1f1f1;
+  border: #f1f1f1 1px solid;
+  padding: 10px 5px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.25rem;
+  border-radius: 5px; }
+
+.SubContent button:hover {
+  background-color: #f1f1f1;
+  color: #000000c0; }
+
+.SubContent img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  border: #f1f1f1 1px solid; }
 
 
 .content {
@@ -3902,6 +3946,32 @@ span.aws-btn__bubble {
   overflow: scroll;
 }
 
+.login-btn {
+  --button-default-height: 40px;
+  --button-default-font-size: 25px;
+  --button-default-border-radius: 25px;
+  --button-horizontal-padding: 26px;
+  color: black;
+  --button-raise-level: 2px;
+  --button-hover-pressure: 2;
+  --transform-speed: 0.6s;
+  --button-primary-color: #ffffff;
+  --button-primary-color-dark: #21b0fd;
+  --button-primary-color-light: #2e84b2;
+  --button-primary-color-hover: #95c9e4;
+  --button-primary-border: 4px solid #ffffff;
+  --button-secondary-color: #fafafa;
+  --button-secondary-color-dark: #67cbc3;
+  --button-secondary-color-light: #349890;
+  --button-secondary-color-hover: #ecf9f8;
+  --button-secondary-border: 7px solid #b3e5e1;
+  --button-anchor-color: #96e92f;
+  --button-anchor-color-dark: #52a934;
+  --button-anchor-color-light: #3f8228;
+  --button-anchor-color-hover: #89cf35;
+  --button-anchor-border: 2px solid #5bbd3a;
+}
+
 .slide {
   display: flex;
   align-items: center;
@@ -3936,6 +4006,150 @@ span.aws-btn__bubble {
   z-index: 1001; }
   .startup .logo-container {
     --size: 164px; }
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none; }
+
+.App-header {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; }
+
+.App-link {
+  color: #61dafb; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.login {
+  width: 27em;
+  height: 40em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  position: relative;
+  z-index: 99; }
+  .login .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+    border-radius: 4px;
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    padding: 17px 10px; }
+  .login .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    background-color: #3498db;
+    width: 100%;
+    position: absolute;
+    right: -34%;
+    border-radius: 6px;
+    z-index: 1;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281); }
+    .login .right-side.right {
+      right: -40%;
+      align-items: flex-end; }
+      .login .right-side.right:hover {
+        right: -45%; }
+    .login .right-side.left {
+      right: 40%;
+      align-items: flex-start; }
+      .login .right-side.left:hover {
+        right: 45%; }
+    .login .right-side .text {
+      font-size: 21px;
+      font-weight: 500;
+      color: #fff;
+      margin-right: 3em;
+      margin-left: 3em; }
+
+.btn {
+  font-size: 21px;
+  padding: 5px 20px;
+  border: 0;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #2386c8; }
+  .btn:focus {
+    outline: none; }
+
+.base-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .base-container .header {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif; }
+  .base-container .content {
+    display: flex;
+    flex-direction: column; }
+    .base-container .content .image {
+      width: 21em; }
+      .base-container .content .image img {
+        width: 100%;
+        height: 100%; }
+    .base-container .content .form {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .base-container .content .form .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content; }
+        .base-container .content .form .form-group label {
+          font-size: 20px; }
+        .base-container .content .form .form-group input {
+          margin-top: 6px;
+          min-width: 18em;
+          height: 37px;
+          padding: 0px 10px;
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          background-color: #f3f3f3;
+          border: 0;
+          border-radius: 4px;
+          margin-bottom: 31px;
+          transition: all 250ms ease-in-out; }
+          .base-container .content .form .form-group input:focus {
+            outline: none;
+            box-shadow: 0px 0px 12px 0.8px #3474dbb2; }
+  .base-container .footer {
+    margin-top: 3em; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

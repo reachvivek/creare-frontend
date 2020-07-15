@@ -88,10 +88,21 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/background/Background.scss":
+/*!***********************************************!*\
+  !*** ./components/background/Background.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
 
 /***/ "./components/background/background.js":
 /*!*********************************************!*\
@@ -104,42 +115,47 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _background_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./background.scss */ "./components/background/background.scss");
-/* harmony import */ var _background_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_background_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Background_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Background.scss */ "./components/background/Background.scss");
+/* harmony import */ var _Background_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Background_scss__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "E:\\Consignments\\Projects\\Creare Consignment\\ras-fullpage-strategies-master\\creare-frontend\\components\\background\\background.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Background = ({
-  src,
-  alt = 'background'
-}) => {
-  return __jsx("img", {
-    alt: alt,
-    src: src,
-    className: "background",
+const Background = () => {
+  const videoSource = "/assets/cover.mp4";
+  return __jsx("div", {
+    className: _Background_scss__WEBPACK_IMPORTED_MODULE_1___default.a.Container,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 10
+      lineNumber: 7,
+      columnNumber: 5
     }
-  });
+  }, __jsx("video", {
+    autoPlay: "autoplay",
+    loop: "loop",
+    muted: true,
+    className: _Background_scss__WEBPACK_IMPORTED_MODULE_1___default.a.Video,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 7
+    }
+  }, __jsx("source", {
+    src: videoSource,
+    type: "video/mp4",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }), "Your browser does not support the video tag."));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Background);
-
-/***/ }),
-
-/***/ "./components/background/background.scss":
-/*!***********************************************!*\
-  !*** ./components/background/background.scss ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
 
 /***/ }),
 
@@ -389,8 +405,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _page_page__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../page/page */ "./components/page/page.js");
 /* harmony import */ var _fullpage_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./fullpage.css */ "./components/fullpage/fullpage.css");
 /* harmony import */ var _fullpage_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_fullpage_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_11__);
 var _jsxFileName = "E:\\Consignments\\Projects\\Creare Consignment\\ras-fullpage-strategies-master\\creare-frontend\\components\\fullpage\\media.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -407,30 +426,29 @@ const Home = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODUL
 }) => {
   return __jsx(_section_section__WEBPACK_IMPORTED_MODULE_8__["default"], {
     wrapper: false,
-    backgroundColor: "#e5ebec",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 5
-    }
-  }, __jsx(_background_background__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    src: "/assets/founder.png",
+    backgroundColor: "#FFF",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16,
+      columnNumber: 5
+    }
+  }, __jsx(_background_background__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
       columnNumber: 7
     }
   }), __jsx(_content_content__WEBPACK_IMPORTED_MODULE_6__["default"], {
     main: __jsx(_lettering_lettering__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      title: "INDEX",
-      text: ["This is a single full page fixed screen.", "Use the button bellow to navigate to the next page"],
+      title: "",
+      text: [],
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 19,
-        columnNumber: 11
+        columnNumber: 15
       }
     }),
     action: __jsx("div", {
@@ -438,7 +456,7 @@ const Home = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODUL
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 21,
         columnNumber: 11
       }
     }, __jsx(react_awesome_button__WEBPACK_IMPORTED_MODULE_1__["AwesomeButton"], {
@@ -449,14 +467,14 @@ const Home = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODUL
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 22,
         columnNumber: 13
       }
     }, "Goto the next page")),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 18,
       columnNumber: 7
     }
   }));
@@ -466,29 +484,21 @@ const Third = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODU
 }) => {
   return __jsx(_section_section__WEBPACK_IMPORTED_MODULE_8__["default"], {
     wrapper: false,
-    backgroundColor: "#e5ebec",
+    backgroundColor: "#FFF",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 39,
       columnNumber: 5
     }
-  }, __jsx(_background_background__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    src: "/assets/founder.png",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 7
-    }
-  }), __jsx(_content_content__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, __jsx(_content_content__WEBPACK_IMPORTED_MODULE_6__["default"], {
     main: __jsx(_lettering_lettering__WEBPACK_IMPORTED_MODULE_4__["default"], {
       title: "PAGE-THREE",
       text: ["This is a screen with preloaded background image."],
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50,
+        lineNumber: 42,
         columnNumber: 11
       }
     }),
@@ -497,7 +507,7 @@ const Third = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODU
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56,
+        lineNumber: 48,
         columnNumber: 11
       }
     }, __jsx(react_awesome_button__WEBPACK_IMPORTED_MODULE_1__["AwesomeButton"], {
@@ -508,26 +518,26 @@ const Third = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODU
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57,
+        lineNumber: 49,
         columnNumber: 13
       }
     }, "Goto the prev page")),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 40,
       columnNumber: 7
     }
   }));
 });
 const media = [{
-  slug: "",
+  slug: "home",
   className: "slide page-one",
   children: __jsx(Home, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 68,
       columnNumber: 15
     }
   })
@@ -538,58 +548,44 @@ const media = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 74,
       columnNumber: 7
     }
   }, __jsx(_section_section__WEBPACK_IMPORTED_MODULE_8__["default"], {
     wrapper: false,
-    backgroundColor: "#e5ebec",
+    backgroundColor: "#fff",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 75,
       columnNumber: 9
     }
   }, __jsx(_content_content__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    main: __jsx(_lettering_lettering__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      title: "PAGE-TWO",
-      text: ["This is multiple section page, scroll down to view more content."],
+    main: __jsx(react_awesome_button__WEBPACK_IMPORTED_MODULE_1__["AwesomeButton"], {
+      className: "login-btn",
+      type: "button",
+      ripple: "true",
+      href: "../login",
+      target: "_blank",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86,
+        lineNumber: 78,
         columnNumber: 15
       }
-    }),
+    }, "Let's Get Started"),
     action: __jsx(_mouse_mouse__WEBPACK_IMPORTED_MODULE_7__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93,
+        lineNumber: 88,
         columnNumber: 21
       }
     }),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
-      columnNumber: 11
-    }
-  })), __jsx(_section_section__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    backgroundColor: "#617be3",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 9
-    }
-  }, __jsx(_lettering_lettering__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    title: "PAGE-SECTION",
-    text: ["This is a continued page section."],
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 76,
       columnNumber: 11
     }
   })))
@@ -601,7 +597,7 @@ const media = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 98,
       columnNumber: 15
     }
   })
@@ -1164,7 +1160,7 @@ const Home = () => {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -1239,6 +1235,17 @@ module.exports = require("core-js/library/fn/object/get-own-property-symbols");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/keys");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 

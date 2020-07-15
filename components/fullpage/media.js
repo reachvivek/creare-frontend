@@ -9,21 +9,14 @@ import Mouse from "../mouse/mouse";
 import Section from "../section/section";
 import Page from "../page/page";
 import "./fullpage.css";
+import Router from "next/router";
 
 export const Home = withNavigationContext(({ fullpage }) => {
   return (
-    <Section wrapper={false} backgroundColor="#e5ebec">
-      <Background src="/assets/founder.png" />
+    <Section wrapper={false} backgroundColor="#FFF">
+      <Background />
       <Content
-        main={
-          <Lettering
-            title="INDEX"
-            text={[
-              "This is a single full page fixed screen.",
-              "Use the button bellow to navigate to the next page",
-            ]}
-          />
-        }
+        main={<Lettering title="" text={[]} />}
         action={
           <div className="button">
             <AwesomeButton
@@ -43,8 +36,7 @@ export const Home = withNavigationContext(({ fullpage }) => {
 
 export const Third = withNavigationContext(({ fullpage }) => {
   return (
-    <Section wrapper={false} backgroundColor="#e5ebec">
-      <Background src="/assets/founder.png" />
+    <Section wrapper={false} backgroundColor="#FFF">
       <Content
         main={
           <Lettering
@@ -71,7 +63,7 @@ export const Third = withNavigationContext(({ fullpage }) => {
 
 export const media = [
   {
-    slug: "",
+    slug: "home",
     className: "slide page-one",
     children: <Home />,
   },
@@ -80,23 +72,20 @@ export const media = [
     className: "sectioned page-two",
     children: (
       <Page>
-        <Section wrapper={false} backgroundColor="#e5ebec">
+        <Section wrapper={false} backgroundColor="#fff">
           <Content
             main={
-              <Lettering
-                title="PAGE-TWO"
-                text={[
-                  "This is multiple section page, scroll down to view more content.",
-                ]}
-              />
+              <AwesomeButton
+                className="login-btn"
+                type="button"
+                ripple="true"
+                href="../login"
+                target="_blank"
+              >
+                Let's Get Started
+              </AwesomeButton>
             }
             action={<Mouse />}
-          />
-        </Section>
-        <Section backgroundColor="#617be3">
-          <Lettering
-            title="PAGE-SECTION"
-            text={["This is a continued page section."]}
           />
         </Section>
       </Page>
