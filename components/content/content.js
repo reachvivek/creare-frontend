@@ -33,7 +33,7 @@ const Content = withNavigationContext(({ fullpage, main, action }) => {
       <div className="content__action">
         <div className="content__action__select">
           <Select
-            selected={fullpage.navigation.animation || `foldOutAnimation`}
+            selected={fullpage.navigation.animation || `cubeAnimation`}
             onChange={(value) => {
               fullpage.navigate({
                 ...fullpage.navigation,

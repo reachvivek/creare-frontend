@@ -260,7 +260,7 @@ const Content = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MO
       columnNumber: 9
     }
   }, __jsx(_select_select__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    selected: fullpage.navigation.animation || `foldOutAnimation`,
+    selected: fullpage.navigation.animation || `cubeAnimation`,
     onChange: value => {
       fullpage.navigate(_objectSpread({}, fullpage.navigation, {
         animation: value
@@ -531,7 +531,7 @@ const Third = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODU
   }));
 });
 const media = [{
-  slug: "home",
+  slug: "",
   className: "slide page-one",
   children: __jsx(Home, {
     __self: undefined,
@@ -542,7 +542,7 @@ const media = [{
     }
   })
 }, {
-  slug: "login",
+  slug: "page-two",
   className: "sectioned page-two",
   children: __jsx(_page_page__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: undefined,
@@ -591,7 +591,7 @@ const media = [{
   })))
 }, {
   slug: "page-three",
-  preload: ["https://caferati.me/images/series/bojack-0.png"],
+  // preload: [""],
   className: "slide page-three",
   children: __jsx(Third, {
     __self: undefined,

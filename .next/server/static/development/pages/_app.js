@@ -216,7 +216,7 @@ const Nav = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE
       columnNumber: 9
     }
   }, __jsx(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: slug === "home" ? "selected" : null,
+    className: slug === "" ? "selected" : null,
     href: "/",
     __self: undefined,
     __source: {
@@ -225,8 +225,8 @@ const Nav = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE
       columnNumber: 11
     }
   }, "Home"), __jsx(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: slug === "login" ? "selected" : null,
-    href: "/login",
+    className: slug === "page-two" ? "selected" : null,
+    href: "/page-two",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -239,10 +239,10 @@ const Nav = Object(react_awesome_slider_dist_navigation__WEBPACK_IMPORTED_MODULE
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 31,
       columnNumber: 11
     }
-  }, "Register"))));
+  }, "Contact Us"))));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
 

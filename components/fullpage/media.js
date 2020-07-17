@@ -63,12 +63,12 @@ export const Third = withNavigationContext(({ fullpage }) => {
 
 export const media = [
   {
-    slug: "home",
+    slug: "",
     className: "slide page-one",
     children: <Home />,
   },
   {
-    slug: "login",
+    slug: "page-two",
     className: "sectioned page-two",
     children: (
       <Page>
@@ -93,7 +93,7 @@ export const media = [
   },
   {
     slug: "page-three",
-    preload: ["https://caferati.me/images/series/bojack-0.png"],
+    // preload: [""],
     className: "slide page-three",
     children: <Third />,
   },
